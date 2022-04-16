@@ -1,6 +1,10 @@
 const functions = require("firebase-functions");
+const cors = require('cors')({origin: true});
 const admin = require('firebase-admin');
+const haha = require('./haha');
 admin.initializeApp();
+
+exports.haha = haha.haha;
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
@@ -11,6 +15,7 @@ admin.initializeApp();
 // });
 
 exports.helloWorld = functions.https.onRequest(async(req, res) => {
+  cors(req, res, async() => {
     functions.logger.log("log:", req.body);
     const newData = req.body;
     const result = await admin.firestore().collection('hello').add(newData);
@@ -19,4 +24,5 @@ exports.helloWorld = functions.https.onRequest(async(req, res) => {
       message: 'Hello World',
       data: result
     });
+  });
 });
