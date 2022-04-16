@@ -1,0 +1,21 @@
+{
+  "name": "firebase_functions_nightworld",
+  "version": "1.0.0",
+  "description": "## Deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ls",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yichunsung/firebase_functions_nightworld.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yichunsung/firebase_functions_nightworld/issues"
+  },
+  "homepage": "https://github.com/yichunsung/firebase_functions_nightworld#readme"
+}
