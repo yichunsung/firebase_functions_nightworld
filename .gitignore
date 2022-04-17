@@ -7,6 +7,22 @@ yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
 
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+dist
+
 # Firebase cache
 .firebase/
 
