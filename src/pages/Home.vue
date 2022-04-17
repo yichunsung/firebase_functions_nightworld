@@ -29,6 +29,9 @@ const getHaha = async() => {
   <h2>
     {{ haha }}
   </h2>
+  <p>
+    {{ `${ haha }-hello` }}
+  </p>
 </template>
 
 <style>
